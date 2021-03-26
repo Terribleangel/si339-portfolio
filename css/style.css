@@ -1,0 +1,101 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 16pt; 
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-image: url("../images/blackbg.jpg");
+    
+  }
+  header, footer{
+    display: flex;
+    flex-direction: column;
+    background-color: darkviolet;
+    align-items: center;
+    justify-content: center;
+  
+  }
+ h1, h2{
+    text-align:center;
+  }
+  .container > h2{
+    color: white;
+  }
+  .nav > ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .nav > ul >li > a{
+    color: white;
+    text-decoration: none;
+  }
+  .nav > ul >li > a.current{
+    color: skyblue;
+    background: black ;
+    text-decoration: wavy underline;
+ }
+ .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+ }
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.column1 {
+    background-color: darkslateblue;
+}
+.column2 {
+    background-color:darkmagenta;
+}
+.column3 {
+    background-color:darkorchid;
+}
+.gallery{
+    /* min-height: 300px; */
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));;
+    padding: 2rem;
+    grid-auto-flow: dense; */
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    
+  }
+  img {
+    width: 300px; /*set the width or max-width*/
+    height: auto; /*this makes sure to maintain the aspect ratio*/
+    border: 3px solid blue;
+    padding: 25px;
+    border-radius: 10px;
+    background-color: lightblue;
+}
+  .gallery > .gallery_list
+  {
+    list-style-type: none;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-flow: dense;
+  }
+  .index_gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-flow: dense;
+  }
+  /* .gallery > .gallery_list > li:nth-child(4n) {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  */
+  /* .gallery > .gallery_list > li:nth-child(8n) {
+    grid-column: span 3;
+    grid-row: span 3;
+  }  */
