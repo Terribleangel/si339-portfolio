@@ -93,7 +93,7 @@ body{
   }
   .index_gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
     grid-auto-flow: dense;
   }
@@ -183,4 +183,17 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr;
  }
+}
+
+@media 
+(min-device-width: 1280px)  {
+  #try {
+  font-size: 50pt;
+  }
+  .nav > ul{
+    font-size: 30pt;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
