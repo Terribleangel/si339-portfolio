@@ -50,7 +50,7 @@ body{
   list-style-type: none;
 }
 .column > ul > li {
-  margin: 0 0 30px 0;
+  margin: 0 0 60px 0;
 }
 .column1 {
     background-color: #011f4b;
@@ -107,6 +107,10 @@ body{
     position: absolute;
     top: -50px;
   }
+  .skip a:focus {
+    position: absolute;
+    top: 10px;
+  }
   .container > ol >li {
     margin: 0 0 30px 0;
   }
@@ -119,7 +123,27 @@ body{
     grid-column: span 3;
     grid-row: span 3;
   }  */
+  #try {
+    /*Your code here.*/
+    animation-name: logo_grow;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+ }
+ @keyframes logo_grow{
+  /*Your code here.*/
+  0% {opacity:0;}
+  100% {opacity:1;}
+  
 
+}
+  @media (prefers-reduced-motion) {
+    .skip a {
+      animation: none;
+    }
+    #try {
+      animation: none;
+    }
+  }
   @media 
   (min-device-width: 768px) 
   and (max-device-width: 1280px) {
