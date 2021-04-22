@@ -196,4 +196,13 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+  .gallery > .gallery_list
+  {
+  grid-template-columns: 1fr 1fr 1fr;
+
+  }
+  .gallery_list > li > p {
+    max-width: 400px;
+    padding-bottom: 20px;
+  }
 }
